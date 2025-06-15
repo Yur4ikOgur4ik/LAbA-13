@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "Test/1.0.0": {
         "dependencies": {
+          "Arguments": "1.0.0",
           "Collections": "1.0.0",
           "LW11": "1.0.0",
           "MSTest": "3.6.1",

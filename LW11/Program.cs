@@ -70,10 +70,10 @@ namespace LW11
 
             // Выводим таблицы (состояние коллекций)
             Console.WriteLine("\n--- Состояние коллекции 1 ---");
-            Console.WriteLine(collection1.PrintTable());
+            //Console.WriteLine(collection1.PrintTable());
 
-            Console.WriteLine("\n--- Состояние коллекции 2 ---");
-            Console.WriteLine(collection2.PrintTable());
+            //Console.WriteLine("\n--- Состояние коллекции 2 ---");
+            //Console.WriteLine(collection2.PrintTable());
 
         }
 

@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Arguments\Arguments.csproj" />
     <ProjectReference Include="..\..\Collections\Collections.csproj" />
     <ProjectReference Include="..\..\LW11\LW11.csproj" />
     <ProjectReference Include="..\..\MusicalInstruments\MusicalInstruments.csproj" />

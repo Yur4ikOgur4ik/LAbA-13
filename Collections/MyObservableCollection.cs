@@ -64,10 +64,10 @@ namespace Collections
                 OnChanged(this.Name, "Элемент заменён", value);
             }
         }
-        public string PrintTable()
-        {
-            return base.PrintHS(); 
-        }
+        //public string PrintTable()
+        //{
+        //    return base.PrintHS(); 
+        //}
 
     }
 }

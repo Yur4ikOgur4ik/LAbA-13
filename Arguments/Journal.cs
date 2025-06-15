@@ -14,7 +14,7 @@ namespace Arguments
         {
             string collectionName = args.Name;
             string changeType = args.ChangeType;
-            string objectData = args.ChangedObject?.ToString() ?? "null";
+            string objectData = args.ChangedObject.ToString();
 
             var position = new JournalEntry(collectionName, changeType, objectData);
             elements.Add(position);
@@ -24,7 +24,7 @@ namespace Arguments
         {
             string collectionName = args.Name;
             string changeType = args.ChangeType;
-            string objectData = args.ChangedObject?.ToString() ?? "null";
+            string objectData = args.ChangedObject.ToString();
 
             var position = new JournalEntry(collectionName, changeType, objectData);
             elements.Add(position);

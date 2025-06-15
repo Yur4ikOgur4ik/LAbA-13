@@ -309,6 +309,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\Users\\PogU\\source\\repos\\LAbA-13\\Arguments\\Arguments.csproj": {
+                "projectPath": "C:\\Users\\PogU\\source\\repos\\LAbA-13\\Arguments\\Arguments.csproj"
+              },
               "C:\\Users\\PogU\\source\\repos\\LAbA-13\\Collections\\Collections.csproj": {
                 "projectPath": "C:\\Users\\PogU\\source\\repos\\LAbA-13\\Collections\\Collections.csproj"
               },
