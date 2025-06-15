@@ -27,7 +27,7 @@ namespace Collections
             LoadFactor = loadfactor;
         }
 
-        public void Add(T itemToAdd)
+        public virtual void Add(T itemToAdd)
         {
             T item = (T)(object)itemToAdd;
             if (item == null)
@@ -141,7 +141,7 @@ namespace Collections
         //    throw new NotImplementedException();
         //}
 
-        public bool Remove(MusicalInstrument itemToDelete)
+        public virtual bool Remove(T itemToDelete)
         {
             T item = (T)(object)itemToDelete;
 

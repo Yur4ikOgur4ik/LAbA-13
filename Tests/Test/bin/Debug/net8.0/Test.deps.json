@@ -979,8 +979,17 @@
           "System.Text.Encodings.Web": "6.0.0"
         }
       },
+      "Arguments/1.0.0": {
+        "runtime": {
+          "Arguments.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Collections/1.0.0": {
         "dependencies": {
+          "Arguments": "1.0.0",
           "MusicalInstruments": "1.0.0"
         },
         "runtime": {
@@ -992,6 +1001,7 @@
       },
       "LW11/1.0.0": {
         "dependencies": {
+          "Arguments": "1.0.0",
           "Collections": "1.0.0",
           "MusicalInstruments": "1.0.0"
         },
@@ -1238,6 +1248,11 @@
       "sha512": "sha512-NSB0kDipxn2ychp88NXWfFRFlmi1bst/xynOutbnpEfRCT9JZkZ7KOmF/I/hNKo2dILiMGnqblm+j1sggdLB9g==",
       "path": "system.text.json/6.0.10",
       "hashPath": "system.text.json.6.0.10.nupkg.sha512"
+    },
+    "Arguments/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Collections/1.0.0": {
       "type": "project",

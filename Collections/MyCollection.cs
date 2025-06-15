@@ -111,74 +111,36 @@ namespace Collections
         {
             return GetEnumerator();
         }
-        //public T this[T key]
-        //{
-        //    get
-        //    {
-        //        int index = Math.Abs(key.GetHashCode()) % set.Length;
-
-        //        for (int i = 0; i < set.Length; i++)
-        //        {
-        //            int currentIndex = (index + i) % set.Length;
-        //            var current = set[currentIndex];
-
-        //            if (current == null)
-        //                throw new KeyNotFoundException("Element was not found in collection");
-
-        //            if (!current.IsDeleted && current.Data.Equals(key))
-        //                return current.Data;
-        //        }
-        //        throw new KeyNotFoundException("Element was not found in collection");
-        //    }
-        //    set
-        //    {
-
-        //        if (!Remove(key))
-        //            throw new KeyNotFoundException("Couldn't find an element to replace");
-
-
-        //        Add(value);
-        //    }
-        //}
-        public T this[int index]
+        public T this[T key]
         {
             get
             {
-                if (index < 0 || index >= Count)
-                    throw new ArgumentOutOfRangeException(nameof(index));
+                int index = Math.Abs(key.GetHashCode()) % set.Length;
 
-                int currentIndex = 0;
-                foreach (var item in this)
+                for (int i = 0; i < set.Length; i++)
                 {
-                    if (currentIndex == index)
-                        return item;
-                    currentIndex++;
-                }
+                    int currentIndex = (index + i) % set.Length;
+                    var current = set[currentIndex];
 
-                throw new InvalidOperationException("Index out of range");
+                    if (current == null)
+                        throw new KeyNotFoundException("Element was not found in collection");
+
+                    if (!current.IsDeleted && current.Data.Equals(key))
+                        return current.Data;
+                }
+                throw new KeyNotFoundException("Element was not found in collection");
             }
             set
             {
-                
-                if (index < 0 || index >= Count)
-                    throw new ArgumentOutOfRangeException(nameof(index));
 
-                int currentIndex = 0;
-                foreach (var node in set)
-                {
-                    if (node != null && !node.IsDeleted)
-                    {
-                        if (currentIndex == index)
-                        {
-                            node.Data = value;
-                            return;
-                        }
-                        currentIndex++;
-                    }
-                }
+                if (!Remove(key))
+                    throw new KeyNotFoundException("Couldn't find an element to replace");
 
-                throw new InvalidOperationException("Index out of range");
+
+                Add(value);
             }
         }
+
+
     }
 }
